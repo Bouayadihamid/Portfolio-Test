@@ -1,0 +1,72 @@
+/* Register ======= */
+
+:root {
+    --register-text-color: #000000;
+    --register-background-color: #ffffff;
+    --register-button-background-color: #dddddd;
+    --register-button-background-color-hover: #dddddd;
+    --register-button-color: #ffffff;
+}
+
+.register {
+    height: 92vh;
+    width: 100%;
+}
+
+.register .register-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Heading */
+.register .register-form h1 {
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+/* Form */
+.register .register-form .form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.register .register-form .form input {
+    margin: 5px;
+    border-radius: 5px;
+    border: black 1px solid;
+    padding: 2px 10px;
+    outline: none;
+    width: 120%;
+}
+
+.register .register-form .form label {
+    margin-top: 10px;
+}
+
+.register .register-form .form p {
+    font-size: 14px;
+}
+.register .register-form .form p a {
+    color: #000000;
+    text-decoration: none;
+}
+.register .register-form .form p a:hover {
+    text-decoration: underline;
+}
+
+/* Button login */
+.register .register-form .form .register-btn {
+    padding: 4px 25px;
+    border: none;
+    border-radius: 16px;
+    background-color: blue;
+    color: var(--login-button-color);
+}
+.register .register-form .form .register-btn:hover {
+    background-color: rgb(48, 48, 176);
+}
