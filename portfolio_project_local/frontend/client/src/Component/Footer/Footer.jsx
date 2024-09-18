@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import image from '../../Assests/maroc-logo.png';
+import logo from '../../Assests/maroc-logo.png';
 import { Mail, Linkedin, Twitter } from 'lucide-react';
 
 const Footer = () => {
@@ -17,7 +17,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className="footer-right">
-        <img src={image} alt="image"/>
+        <img src={logo} alt="logo"/>
         <p className="text-black-50">Copyright © 2024 Statify Team. All Rights Reserved.</p>
       </div>
     </section>

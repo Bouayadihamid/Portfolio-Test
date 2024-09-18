@@ -7,6 +7,7 @@ body {
     --text-color: #000000;
     --text-color-hero: #1b0fc2;
     --button-background-color-hover: rgba(14, 62, 165, 0.749);
+    --section-spacing: 4rem; /* Added a common section spacing variable */
 }
 
 /* HERO SECTION -------*/
@@ -16,7 +17,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Ensures content is clipped */
+    overflow: hidden;
+    margin-bottom: var(--section-spacing); /* Adjusted spacing between sections */
 }
 .hero-section .video-bg {
     position: absolute;
@@ -25,11 +27,11 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.8; /* Adjust opacity as needed */
-    z-index: -1; /* Places video behind content */
+    opacity: 0.8;
+    z-index: -1;
 }
 .hero-section .hero {
-    position: relative; /* Ensures content is above the video */
+    position: relative;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -66,12 +68,12 @@ body {
 
 /* ABOUT SECTION ------*/
 .about-section {
-
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin-bottom: var(--section-spacing); /* Adjusted spacing between sections */
 }
 .about-section .about {
     display: flex;
@@ -96,6 +98,59 @@ body {
     text-align: left;
 }
 
+/* TEAM SECTION ------ */
+.team-section {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--section-background-color);
+    padding: 2rem;
+    margin-bottom: var(--section-spacing); /* Adjusted spacing between sections */
+}
+
+.team-section .title {
+    margin-bottom: 1.5rem;
+}
+
+.team-section .carousel-item {
+    text-align: center;
+}
+
+.team-section .carousel-item img {
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    margin: auto;
+}
+
+.team-section .carousel-caption {
+    position: static;
+    color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.team-section .carousel-caption h3 {
+    margin: 0.5rem 0;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 1;
+    width: 5%;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
 /* CONTACT SECTION ------ */
 .contact-section {
     position: relative;
@@ -103,6 +158,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: var(--section-spacing); /* Adjusted spacing between sections */
 }
 .contact-section .contact {
     display: flex;
@@ -112,27 +168,40 @@ body {
 }
 
 .contact-info-upper-container {
-  display: flex;
-  justify-content: center;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
-  margin: 2rem auto;
-  padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+.social-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
+    margin-top: 1px;
+    padding: 2px;
+    
 }
 
+
+
 .contact-info-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
 }
 
 .contact-info-container p {
-  font-size: larger;
-  height: 20px;
+    font-size: larger;
+    height: 20px;
 }
 
 .contact-info-container p a {
@@ -149,13 +218,19 @@ body {
     height: 2rem;
 }
 
+
 .contact-info-container p a:hover {
     color: #464545b3;
 }
 
-/* MEDIA QUERY ====================== */
 
-/* 800 PX */
+
+
+
+
+  
+
+/* MEDIA QUERY ====================== */
 @media (max-width: 800px) {
     /*about section*/
     .about-section {
@@ -174,7 +249,10 @@ body {
     }
 }
 
-/* 400 PX */
+
+  
+  
+
 @media (max-width: 400px) {
     /*about section*/
     .about-section {
