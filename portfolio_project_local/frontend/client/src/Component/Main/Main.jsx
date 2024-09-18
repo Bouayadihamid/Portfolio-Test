@@ -4,35 +4,38 @@ import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { Link } from 'react-router-dom';
 import email from '../../Assests/email.png';
 import linkedin from '../../Assests/linkedin.png';
-import twitter from '../../Assests/x.png';
 import aboutimage from '../../Assests/images (3).jpeg';
+import twitter from '../../Assests/x.png';
+import videobg from '../../Assests/videobg.mp4';
 
 function Main() {
   return (
     <>
     {/* HERO SECTION */}
     <section className="hero-section">
+      <video src={videobg} autoPlay loop muted className="video-bg" />
       <div className="hero">
-        <h1 className="fw-bold">Welcome</h1>
-        <p>To statify morocco statistics online</p>
+        
+        
         <Link to="/login">
-          <button className="btn-hero btn-warning p-2 m-2">Get Started</button>
+          <button className="btn-hero  ">Get Started</button>
         </Link>
       </div>
     </section>
     {/* ABOUT SECTION */}
     <section className="about-section" id="about">
-      <div className="about" >
+      <div className="about">
         <h1 className="heading text-uppercase">About Us</h1>
-        <span className="text-black-50">Statify is a morocco statistics online</span>
-        <p className="text-black-50">All you need to know About Us</p>
+        <span className="text-black-50">Statify is a Morocco statistics online</span>
         <div className="about-content">
+
           <div className="about-image">
-            <img src={aboutimage} alt="about-image"/>
+          <img src={aboutimage} alt="about-image"/>
           </div>
           <div className="about-info">
-            <p>Statify infos:</p>
-            <p>Statistics in Morocco, managed by the High Commission for Planning (HCP), provide key insights into the country’s economy, employment, education, and health. They guide national policies and track development progress. Recently, there's been a focus on environmental and sustainability data to support climate goals. Reliable statistics are essential for informed decision-making and socio-economic growth.</p>
+            <p>Statify is a groundbreaking platform designed to transform the way Morocco conducts its national census. Our mission is to streamline the data collection process by empowering citizens to participate directly. We believe that by modernizing this vital task, we can improve the accuracy, efficiency, and cost-effectiveness of large-scale statistical reporting.
+                At Statify, we’re committed to innovation that benefits both the government and the people. Our platform enables individuals to easily input their own information, eliminating the need for traditional data collectors and saving valuable time and resources.
+             Join us in building a smarter, more connected Morocco, where every voice matters, and every data point contributes to a brighter future.</p>
           </div>
         </div>
       </div>
