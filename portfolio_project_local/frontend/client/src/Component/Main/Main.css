@@ -121,11 +121,18 @@ body {
 
 .team-section .carousel-item img {
     border-radius: 50%;
-    height: 70px;
-    width: 70px;
+    height: 200px;
+    width: 200px;
     object-fit: cover;
     margin: auto;
 }
+.icon.team-contact-icon img {
+    height: 30px; /* Adjusted size to make it very small */
+    width: 30px;
+    object-fit: cover; /* Ensures the image doesn't get distorted */
+    margin: auto;
+}
+
 
 .team-section .carousel-caption {
     position: static;

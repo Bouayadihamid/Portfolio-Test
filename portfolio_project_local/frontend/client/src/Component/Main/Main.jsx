@@ -8,10 +8,10 @@ import linkedin from '../../Assests/linkedin.png';
 import aboutimage from '../../Assests/images (3).jpeg';
 import twitter from '../../Assests/x.png';
 import videobg from '../../Assests/videobg.mp4';
-import teamMember1 from '../../Assests/images (3).jpeg';
-import teamMember2 from '../../Assests/images (3).jpeg';
-import teamMember3 from '../../Assests/images (3).jpeg';
-import teamMember4 from '../../Assests/images (3).jpeg';
+import teamMember1 from '../../Assests/images (3).jpeg'; // Replace with your actual image path
+import teamMember2 from '../../Assests/images (3).jpeg'; // Replace with your actual image path
+import teamMember3 from '../../Assests/images (3).jpeg'; // Replace with your actual image path
+import teamMember4 from '../../Assests/images (3).jpeg'; // Replace with your actual image path
 
 function Main() {
   return (
@@ -49,30 +49,53 @@ function Main() {
         <Carousel interval={1000000} pause={false} controls={true}>
           <Carousel.Item>
             <img
-              className="d-block team-member-image"
+              className="d-block"
               src={teamMember1}
               alt="First team member"
             />
             <Carousel.Caption>
               <h3>Mounim Nadir</h3>
               <p>Position and brief description of team member.</p>
-              <div className='team-social-container'>
-                <div className="team-contact-info-container">
-                  <img src={email} alt="Email icon" className="icon team-contact-icon" />
-                  <p><a href="mailto:Bouayadihamid@gmail.com">Gmail</a></p>
-                </div>
-                <div className="team-contact-info-container">
-                  <img src={linkedin} alt="LinkedIn icon" className="icon team-contact-icon" />
-                  <p><a href="https://www.linkedin.com/in/mounim-nadir-b6575b27a">LinkedIn</a></p>
-                </div>
-                <div className="team-contact-info-container">
-                  <img src={twitter} alt="Twitter icon" className="icon team-contact-icon" />
-                  <p><a href="https://twitter.com/AbdelKhouda">X-Twitter</a></p>
-                </div>
-              </div>
+              
+              
             </Carousel.Caption>
           </Carousel.Item>
-          {/* Repeat similar structure for the rest of the team members */}
+          <Carousel.Item>
+            <img
+              className="d-block"
+              src={teamMember2}
+              alt="Second team member"
+            />
+            <Carousel.Caption>
+              <h3>Abdelaaziz Khouda</h3>
+              <p>Position and brief description of team member.</p>
+              
+           </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block"
+              src={teamMember3}
+              alt="Third team member"
+            />
+            <Carousel.Caption>
+              <h3>Mohamed El Bouhmi</h3>
+              <p>Position and brief description of team member.</p>
+              
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block"
+              src={teamMember4}
+              alt="Fourth team member"
+            />
+            <Carousel.Caption>
+              <h3>Hamid Bouayadi</h3>
+              <p>Position and brief description of team member.</p>
+             
+            </Carousel.Caption>
+          </Carousel.Item>
         </Carousel>
       </section>
 
@@ -109,6 +132,44 @@ function Main() {
           </div>
         </div>
       </section>
+
+      {/* contact us form */}
+      <section className="page-section" id="contact">
+                <div className="container">
+                    <div className="text-center">
+                        <h2 className="section-heading text-uppercase">Contact Us</h2>
+                        <h3 className="section-subheading text-muted">We'd love to hear from you.</h3>
+                    </div>
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN" className="contact-form">
+                        <div className="row align-items-stretch">
+                            <div className="col-md-6">
+                                <div className="form-group">
+                                    <input className="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
+                                    <div className="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                </div>
+                                <div className="form-group">
+                                    <input className="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
+                                    <div className="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                    <div className="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                </div>
+                                <div className="form-group">
+                                    <input className="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
+                                    <div className="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                </div>
+                            </div>
+                            <div className="col-md-6">
+                                <div className="form-group form-group-textarea">
+                                    <textarea className="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
+                                    <div className="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                                </div>
+                            </div>
+                            <div className="col-12 text-center">
+                                <button className="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
     </>
   );
 }
