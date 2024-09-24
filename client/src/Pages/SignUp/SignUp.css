@@ -27,8 +27,8 @@
 /* Heading */
 .signup .signup-form h1 {
     font-size: 40px;
-    margin-top: 30px;
-    margin-bottom: 15px;
+    margin-top: 70px;
+    margin-bottom: 20px;
     color: var(--signup-text-color);
 }
 
@@ -44,14 +44,14 @@
     margin: 5px;
     border-radius: 5px;
     border: black 1px solid;
-    padding: 2px 10px;
+    padding: 7px 10px;
     outline: none;
     width: 80%;
     text-size-adjust: 10px;
 }
 
 .signup .signup-form .form label {
-    margin-top: 10px;
+    margin-top: 4px;
 }
 
 .signup .signup-form .form p {
@@ -68,21 +68,24 @@
 
 /* Button login */
 .signup .signup-form .form .signup-btn {
-    padding: 4px 25px;
+    padding: 10px 25px;
     border: none;
-    border-radius: 16px;
+    border-radius: 25px;
     background-color: blue;
     color: var(--login-button-color);
+    font-size: 20px;
 }
 .signup .signup-form .form .signup-btn:hover {
     background-color: rgb(48, 48, 176);
 }
 
 .background-signup {
-    height: 90vh;
-    width: 350px;
+    height: 80vh;
+    width: 425px;
     background-color: #ffffff2e;
     border-radius: 16px;
+    padding: 0px 0px;
+    margin: 140px 0px;
 }
 @media  (max-width: 700px){
     
