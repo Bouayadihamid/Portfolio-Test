@@ -1,8 +1,0 @@
-pipenv shell
-pipenv install flask flask-restx flask_Sqlalchemy flask_jwt_extended 
-pipenv install python-decouple
-export FLASK_APP=main.py
-flask shell
-Recipe
-db.create_all()
-$ pip install flask_migrate
