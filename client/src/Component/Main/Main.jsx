@@ -26,7 +26,7 @@ const LoggedInHome = () => {
   const [recipeId, setRecipeId] = useState(0);
 
   useEffect(() => {
-    fetch('/recipe/recipes')
+    fetch('http://localhost:5000/recipe/recipes')
       .then(res => res.json())
       .then(data => {
         console.log(data);
@@ -36,7 +36,7 @@ const LoggedInHome = () => {
   }, []);
 
   const getAllRecipes = () => {
-    fetch('/recipe/recipes')
+    fetch('http://localhost:5000/recipe/recipes')
       .then(res => res.json())
       .then(data => {
         setRecipes(data);
@@ -106,7 +106,7 @@ const LoggedInHome = () => {
       }
     };
 
-    fetch(`/recipe/recipe/${id}`, requestOptions)
+    fetch(`http://localhost:5000/recipe/recipe/${id}`, requestOptions)
       .then(res => res.json())
       .then(data => {
         console.log(data);
