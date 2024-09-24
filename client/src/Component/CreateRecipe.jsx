@@ -27,7 +27,7 @@ const CreateRecipePage = () => {
 
     try {
       // fetch kaydir requête l API bach nsiftou données (POST)
-      const res = await fetch('/recipe/recipes', requestOptions); // hna darna correction l'URL bch tconforme 3la Flask backend, khass tkon localhost:5000
+      const res = await fetch('http://localhost:5000/recipe/recipes', requestOptions); // hna darna correction l'URL bch tconforme 3la Flask backend, khass tkon localhost:5000
 
       // hna njibo l status dial l response
       console.log('Response status:', res.status); // l3ayba kant bach njibo details
