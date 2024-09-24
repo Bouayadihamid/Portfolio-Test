@@ -372,7 +372,7 @@ const LoggedOutHome =()=>{
         <section className="team-section" id="team">
           <h1 className="title text-uppercase">Our Team</h1>
           
-          <Carousel interval={1000000} pause={false} controls={true}>
+          <Carousel interval={5000} pause={false} controls={true}>
             <Carousel.Item>
               <img
                 className="d-block"
@@ -380,8 +380,10 @@ const LoggedOutHome =()=>{
                 alt="First team member"
               />
               <Carousel.Caption>
-                <h3>Mounim Nadir</h3>
-                <p>Position and brief description of team member.</p>
+              <h1>Mounim Nadir</h1>
+                <h3>Fullstack & Specialise in The Frontend </h3>
+                <h4>DevOps</h4>
+
                 
                 
               </Carousel.Caption>
@@ -393,8 +395,9 @@ const LoggedOutHome =()=>{
                 alt="Second team member"
               />
               <Carousel.Caption>
-                <h3>Abdelaaziz Khouda</h3>
-                <p>Position and brief description of team member.</p>
+              <h1>Abdelaaziz Khouda</h1>
+                <h3>Frontend Engineer  </h3>
+                <h4>Database</h4>
                 
             </Carousel.Caption>
             </Carousel.Item>
@@ -405,8 +408,10 @@ const LoggedOutHome =()=>{
                 alt="Third team member"
               />
               <Carousel.Caption>
-                <h3>Mohamed El Bouhmi</h3>
-                <p>Position and brief description of team member.</p>
+              <h1>Mohamed El Bouhmi</h1>
+                <h3>Fullstack & Specialise in the Backend </h3>
+                <h4>DevOps</h4>
+
                 
               </Carousel.Caption>
             </Carousel.Item>
@@ -417,8 +422,10 @@ const LoggedOutHome =()=>{
                 alt="Fourth team member"
               />
               <Carousel.Caption>
-                <h3>Hamid Bouayadi</h3>
-                <p>Position and brief description of team member.</p>
+              <h1>Hamid Bouayadi</h1>
+                <h3>fullstack & specialise in the Backend </h3>
+                <h4>DevOps</h4>
+
               
               </Carousel.Caption>
             </Carousel.Item>
@@ -473,7 +480,7 @@ const LoggedOutHome =()=>{
                   alt="Email icon"
                   className="icon contact-icon email-icon"
                 />
-                <p><a href="mailto:Bouayadihamid@gmail.com">Gmail</a></p>
+                <p><a href="mailto:abdelkhouda055@gmail.com">Gmail</a></p>
               </div>
               <div className="contact-info-container">
                 <img
@@ -481,7 +488,7 @@ const LoggedOutHome =()=>{
                   alt="LinkedIn icon"
                   className="icon contact-icon"
                 />
-                <p><a href="https://www.linkedin.com/in/mounim-nadir-b6575b27a">LinkedIn</a></p>
+                <p><a href="https://www.linkedin.com/in/abdel-khouda-502b03253/">LinkedIn</a></p>
               </div>
               <div className="contact-info-container">
                 <img
@@ -548,7 +555,7 @@ const LoggedOutHome =()=>{
                   alt="LinkedIn icon"
                   className="icon contact-icon"
                 />
-                <p><a href="https://www.linkedin.com/in/mounim-nadir-b6575b27a">LinkedIn</a></p>
+                <p><a href="https://www.linkedin.com/in/hamid-bouayadi/">LinkedIn</a></p>
               </div>
               <div className="contact-info-container">
                 <img
@@ -556,7 +563,7 @@ const LoggedOutHome =()=>{
                   alt="Twitter icon"
                   className="icon contact-icon"
                 />
-                <p><a href="https://twitter.com/AbdelKhouda">X-Twitter</a></p>
+                <p><a href="https://x.com/HamidBouayadi">X-Twitter</a></p>
               </div>
             </div>
           </div>
