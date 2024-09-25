@@ -66,15 +66,25 @@ Contributing
 Contributions are welcome! To contribute, follow these steps:
 
 Fork the repository
+
 Create a new branch (git checkout -b feature/your-feature-name)
+
 Make your changes and commit them (git commit -m 'Add some feature')
+
 Push to the branch (git push origin feature/your-feature-name)
+
 Create a new Pull Request
+
 License
+
 This project is licensed under the Public License.
 
+
+
 Contact Information
+
 For any questions or support, please contact us at:
 
 Email: statify.support@morocco.org
-GitHub: Statify Repository
+
+GitHub: [Statify Repository](https://github.com/Bouayadihamid/Statify_Portfolio/tree/main)
