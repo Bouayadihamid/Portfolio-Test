@@ -14,7 +14,9 @@ Contact Information
 
 
 **Project Description**
-Statify empowers Moroccan citizens to input their own data for the national census, reducing the need for traditional data collectors. This platform helps the government save valuable time and resources while enhancing data accuracy and efficiency. By fostering citizen participation, Statify ensures that every voice is heard, and every data point counts toward building a more connected and informed Morocco.
+Statify empowers Moroccan citizens to input their own data for the national census, reducing the need for traditional data collectors. This platform helps the government save valuable
+time and resources while enhancing data accuracy and efficiency. By fostering citizen participation, Statify ensures that every voice is heard, and every data point counts toward
+building a more connected and informed Morocco.
 
 
 **Installation**
