@@ -41,10 +41,26 @@ class Recipe(db.Model):
         db.session.delete(self)
         db.session.commit()
         
-    def update(self,title,description): 
-        self.title=title
-        self.description=description      
-        
+    def update(self, title, description, full_name, cin, phone_number, email, age, gender, state, city, address, marital_status, nbr_of_children, occupation, salary): 
+        self.title = title
+        self.description = description
+        self.full_name = full_name
+        self.cin = cin
+        self.phone_number = phone_number
+        self.email = email
+        try:
+            self.age = int(age)  # Ensuring age is an integer
+        except ValueError:
+            raise ValueError("Age must be an integer")
+        self.gender = gender
+        self.state = state
+        self.city = city
+        self.address = address
+        self.marital_status = marital_status
+        self.nbr_of_children = int(nbr_of_children)
+        self.occupation = occupation
+        self.salary = float(salary)  # Ensuring salary is a float
+
         db.session.commit()  
         
 #user model
